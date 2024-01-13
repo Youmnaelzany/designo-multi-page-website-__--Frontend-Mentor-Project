@@ -1,8 +1,64 @@
 ---
+import Header from "@/components/Header.astro";
 import Layout from "../layouts/Layout.astro";
 import "@/styles/globals.css";
 ---
 
-<Layout title="Welcome to Astro.">
-  <main></main>
+<Layout title="Designo multi-page website">
+  <Header />
+  <main>
+    <section class="realtive">
+      <div class="z-[-100px] absolute left-0 top-[30rem]">
+        <img src="/images/shared/desktop/bg-pattern-leaf.svg" alt="" />
+      </div>
+      <div
+        class="w-[69.4375rem] h-[40rem] py-36 pl-20 bg-[#E7816B] rounded-[0.9375rem] z-[200px] absolute flex"
+      >
+        <div>
+          <h1
+            class="text-5xl leading-[3rem] font-medium text-[#fff] w-[33.75rem]"
+          >
+            Award-winning custom designs and digital branding solutions
+          </h1>
+          <p
+            class="text-base leading-[1.625rem] font-normal text-[#fff] mt-[1.5rem] mb-10 w-[27.8125rem]"
+          >
+            With over 10 years in the industry, we are experienced in creating
+            fully responsive websites, app design, and engaging brand
+            experiences. Find out more about our services.
+          </p>
+          <button
+            type="button"
+            class="rounded-lg uppercase h-14 w-36 bg-[#fff] text-[0.9375rem] font-medium tracking-[0.0625rem] text-[#333136]"
+            >Learn More</button
+          >
+        </div>
+        <div class="reative">
+          <img
+            src="/images/home/desktop/bg-pattern-hero-home.svg"
+            class="absolute top-0 right-[10px]"
+            alt=""
+          />
+          <img
+            src="/images/home/desktop/image-hero-phone.png"
+            class="absolute top-[-30px] right-[-60px]"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <section class="flex relative top-[50rem]">
+<div>
+    <h2>Web Design</h2>
+      <div>
+        <a href="/web-project">Web Design</a>
+            <img src="/public/images/shared/desktop/icon-right-arrow.svg" alt="arrow-icon">
+      </div>
+</div>
+      <div>
+        <div></div>
+        <div></div>
+      </div>
+    </section>
+  </main>
 </Layout>
