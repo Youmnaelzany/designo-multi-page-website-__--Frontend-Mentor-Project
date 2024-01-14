@@ -5,37 +5,36 @@
 *,
 *::after,
 *::before {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font: inherit;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font: inherit;
 }
 
 html {
-    hanging-punctuation: first last;
+  hanging-punctuation: first last;
 }
 
 body {
-    font-family: 'Jost', sans-serif;
-    font-size: 1.125rem;
-    line-height: 1.5rem;
-    padding: 4rem 10rem;
-    min-height: 100svh;
+  font-family: "Jost", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  padding: 4rem 10rem;
+  min-height: 100svh;
 }
 
 img,
 picture,
 svg,
 video {
-    font-style: italic;
-    background-repeat: no-repeat;
-    background-size: cover;
-    shape-margin: 1rem;
-    max-width: 100%;
-    height: auto;
-    vertical-align: middle;
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-size: cover;
+  shape-margin: 1rem;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
 }
-
 
 h1,
 h2,
@@ -43,20 +42,76 @@ h3,
 h4,
 h5,
 h6 {
-    text-wrap: balance;
+  text-wrap: balance;
 }
-
 
 /* 75ch not higher than that */
 p {
-    max-width: 75ch;
-    text-wrap: pretty;
+  max-width: 75ch;
+  text-wrap: pretty;
 }
 
-
 @media (prefers-reduced-motion: no-preference) {
-    :has(:target) {
-        scroll-behavior: smooth;
-        scroll-padding-top: 3rem;
-    }
+  :has(:target) {
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
+  }
+}
+
+/* Seconde Section Styling */
+
+.col1 {
+  background: url("/images/home/desktop/image-web-design-large.jpg") no-repeat;
+  background-size: cover;
+}
+.overlay:hover {
+  background: #e7816b;
+  opacity: 0.9;
+}
+.col2 {
+  background: url("/images/home/desktop/image-app-design.jpg") no-repeat;
+  background-size: cover;
+}
+.col3 {
+  background: url("/images/home/desktop/image-graphic-design.jpg") no-repeat;
+  background-size: cover;
+}
+
+/* Third Section Styling */
+
+/* Media Queries */
+
+/* Mobile */
+@media (min-width: 320px) and (max-width: 480px) {
+  .col1 {
+    background: url("/images/home/mobile/image-web-design.jpg") no-repeat;
+  }
+  .col2 {
+    background: url("/images/home/mobile/image-app-design.jpg") no-repeat;
+  }
+  .col3 {
+    background: url("/images/home/mobile/image-graphic-design.jpg") no-repeat;
+  }
+}
+
+/* Tablet */
+@media (min-width: 481px) and (max-width: 768px) {
+  body {
+    padding: 4rem 2.44rem;
+  }
+
+  .col1 {
+    background: url("/images/home/tablet/image-web-design.jpg") no-repeat;
+  }
+  .col2 {
+    background: url("/images/home/tablet/image-app-design.jpg") no-repeat;
+  }
+  .col3 {
+    background: url("/images/home/tablet/image-graphic-design.jpg") no-repeat;
+  }
+  .hero__section {
+    flex-direction: column;
+    width: 43.0625rem;
+    height: 52.6875rem;
+  }
 }
