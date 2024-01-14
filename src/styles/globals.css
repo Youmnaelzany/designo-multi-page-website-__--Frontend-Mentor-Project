@@ -21,6 +21,8 @@ body {
   line-height: 1.5rem;
   padding: 4rem 10rem;
   min-height: 100svh;
+  width: 90rem;
+  max-width: 1440px;
 }
 
 img,
