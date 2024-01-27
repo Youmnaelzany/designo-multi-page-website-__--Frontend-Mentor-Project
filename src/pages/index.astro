@@ -2,6 +2,7 @@
 import Header from "@/components/Header.astro";
 import Layout from "../layouts/Layout.astro";
 import "@/styles/globals.css";
+import Footer from "@/components/Footer.astro";
 ---
 
 <Layout title="Designo multi-page website">
@@ -66,7 +67,7 @@ import "@/styles/globals.css";
           </h2>
           <div class="flex gap-5 items-center">
             <a
-              href="/web-project"
+              href="/web-design"
               class="text-[0.9375rem] font-medium leading-normal tracking-[0.3125rem] uppercase text-[#fff]"
               >View Projects</a
             >
@@ -230,7 +231,7 @@ import "@/styles/globals.css";
     >
       <div class="">
         <img
-          src="/public/images/shared/desktop/bg-pattern-call-to-action.svg"
+          src="/images/shared/desktop/bg-pattern-call-to-action.svg"
           alt=""
         />
       </div>
@@ -257,4 +258,5 @@ import "@/styles/globals.css";
       </div>
     </section>
   </main>
+  <Footer />
 </Layout>

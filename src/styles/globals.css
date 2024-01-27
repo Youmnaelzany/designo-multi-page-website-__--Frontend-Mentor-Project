@@ -11,10 +11,6 @@
   font: inherit;
 }
 
-html {
-  hanging-punctuation: first last;
-}
-
 body {
   font-family: "Jost", sans-serif;
   font-size: 1.125rem;
@@ -116,4 +112,25 @@ p {
     width: 43.0625rem;
     height: 52.6875rem;
   }
+}
+
+/* Second Page  */
+/* First Pattern */
+.section1,
+.section2 {
+  background-image: url("/public/images/shared/desktop/bg-pattern-leaf.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.section1 {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.section2 {
+  position: relative;
+  top: 50px;
+  left: 100px;
 }
