@@ -1,0 +1,127 @@
+---
+import Header from "@/components/Header.astro";
+import Layout from "../layouts/Layout.astro";
+import "@/styles/globals.css";
+import Footer from "@/components/Footer.astro";
+---
+
+<Layout title="Designo multi-page website">
+  <!-- Header -->
+  <Header />
+  <!-- End Of Header -->
+  <!-- Start Of Main Page -->
+  <main>
+    <!-- Start Of Contact Us Section -->
+    <section
+      class="w-[69.4375rem] h-[38rem] bg-[#E7816B] relative text-[#fff] flex justify-between items-center px-24 rounded-[0.9375rem]"
+    >
+      <div class="flex flex-col gap-8 py-40">
+        <img
+          class="absolute bottom-0 left-0 object-cover inline-block"
+          src="/public/images/contact/desktop/bg-pattern-hero-desktop.svg"
+          alt=""
+        />
+        <h1 class="text-5xl font-medium leading-[3rem]">Contact us</h1>
+        <p class="w-[27.8125rem] text-base font-normal leading-[1.625rem]">
+          Ready to take it to the next level? Let&acute;s talk about your
+          project or idea and find out how we can help your business grow. If
+          you are looking for unique digital experiences that&acute;s relatable
+          to your users, drop us a line.
+        </p>
+      </div>
+      <form action="" method="get" class="flex flex-col gap-8">
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Name"
+          class="bg-[#E7816B] border-none outline-none placeholder:text-[0.9375rem] font-medium leading-[1.625rem] placeholder:text-opacity-50 placeholder:text-[#fff]"
+        />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email address"
+          class="bg-[#E7816B] border-none outline-none placeholder:text-[0.9375rem] font-medium leading-[1.625rem] placeholder:text-opacity-50 placeholder:text-[#fff]"
+        />
+        <input
+          type="tel"
+          name="tel"
+          id="tel"
+          placeholder="Phone"
+          class="bg-[#E7816B] border-none outline-none placeholder:text-[0.9375rem] font-medium leading-[1.625rem] placeholder:text-opacity-50 placeholder:text-[#fff]"
+        />
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="5"
+          placeholder="Your Message"
+          class="bg-[#E7816B] border-none outline-none placeholder:text-[0.9375rem] font-medium leading-[1.625rem] placeholder:text-opacity-50 placeholder:text-[#fff]"
+        ></textarea>
+        <button
+          type="submit"
+          class="self-end w-[9.5rem] h-[3.5rem] bg-[#fff] rounded-lg text-[#333136] text-[0.9375rem] font-medium leading-normal tracking-[0.0625rem] uppercase"
+          >Submit</button
+        >
+      </form>
+    </section>
+    <!-- End Of Contact Us Section -->
+    <!-- Company Head Court -->
+    <section class="flex justify-between items-center">
+      <!-- Canada -->
+      <div class="">
+        <div class="relative">
+          <img
+            class=""
+            src="/public/images/shared/desktop/illustration-canada.svg"
+            alt=""
+          />
+          <img
+            class="absolute top-0 object-cover inline-block"
+            src="/public/images/shared/desktop/bg-pattern-small-circle.svg"
+            alt=""
+          />
+        </div>
+        <h1 class="">Canada</h1>
+        <button type="button">See location</button>
+      </div>
+      <!-- Australia -->
+      <div class="">
+        <div class="">
+          <img
+            src="/public/images/shared/desktop/illustration-canada.svg"
+            alt=""
+          />
+          <img
+            src="/public/images/shared/desktop/bg-pattern-small-circle.svg"
+            alt=""
+          />
+        </div>
+
+        <h1 class="">Australia</h1>
+        <button type="button">See location</button>
+      </div>
+      <!-- United Kingdom -->
+      <div class="">
+        <div class="">
+          <img
+            src="/public/images/shared/desktop/illustration-united-kingdom.svg"
+            alt=""
+          />
+          <img
+            src="/public/images/shared/desktop/bg-pattern-small-circle.svg"
+            alt=""
+          />
+        </div>
+        <h1 class="">United Kingdom</h1>
+        <button type="button">See location</button>
+      </div>
+    </section>
+    <!--End Of Company Head Court -->
+  </main>
+  <!-- End Of Of Main Page -->
+  <!-- Footer -->
+  <Footer />
+  <!-- End Of Footer -->
+</Layout>

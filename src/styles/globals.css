@@ -140,3 +140,20 @@ section {
     height: 52.6875rem;
   }
 }
+
+/* Contact */
+
+input {
+  position: relative;
+}
+
+input::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 2px solid #ccc;
+  width: 23.75rem;
+  height: 0.0625rem;
+}
