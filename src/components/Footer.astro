@@ -2,16 +2,20 @@
 import "@/styles/globals.css";
 ---
 
-<footer class="bg-[#1D1C1E] pt-[9.44rem] pb-[4.5rem] px-[10.30rem]">
+<footer
+  class="bg-[#1D1C1E] pt-[9.44rem] pb-[4.5rem] px-[10.30rem] mx-0 text-[#fff]"
+>
   <!-- First Row / logo & Nav Links -->
-  <div class="flex justify-between items-center">
+  <div class="footer__first__row flex justify-between items-center">
     <!-- Logo -->
-    <div class="">
+    <div class="w-[9.81rem]">
       <img src="/images/shared/desktop/logo-light.png" alt="logo-light" />
     </div>
     <!-- Nav Links -->
     <nav class="">
-      <ul class="">
+      <ul
+        class="flex justify-between items-center gap-[2.62rem] text-sm font-normal leading-[0.875rem] tracking-[0.125rem]"
+      >
         <li class=""><a href="" class="">OUR COMPANY</a></li>
         <li class=""><a href="" class="">LOCATIONS</a></li>
         <li class=""><a href="" class="">CONTACT</a></li>
@@ -19,21 +23,25 @@ import "@/styles/globals.css";
     </nav>
   </div>
   <!-- Second Row / Address, Contact & Social Media -->
-  <div class="">
+  <div class="flex justify-between items-center mt-20">
     <!-- Address -->
-    <div class="">
+    <div
+      class="w-[21.875rem] text-base font-bold leading-[1.625rem] opacity-50"
+    >
       <h3 class="">Designo Central Office</h3>
       <p class="">3886 Wellington Street</p>
       <p class="">Toronto, Ontario M9C 3J5</p>
     </div>
     <!-- Contact -->
-    <div class="">
+    <div
+      class="w-[21.875rem] text-base font-bold leading-[1.625rem] opacity-50"
+    >
       <h3 class="">Contact Us (Central Office)</h3>
       <p class="">P : +1 253-863-8967</p>
       <p class="">M : contact@designo.co</p>
     </div>
     <!-- Social Media -->
-    <div class="">
+    <div class="flex justify-between items-center gap-4 self-end">
       <!-- Facebook -->
       <div class="">
         <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"
